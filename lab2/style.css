@@ -1,0 +1,130 @@
+/* Скидання стандартних стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Фон сторінки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #B4B198; /* теплий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #30352E;
+}
+
+/* Контейнер форми */
+.container {
+    background-color: #96a07c96;
+    padding: 35px;
+    border-radius: 15px; /* більш округла форма */
+    box-shadow: 0 6px 18px rgba(48, 53, 46, 0.25);
+    width: 100%;
+    max-width: 420px;
+    border: 2px solid #889687;
+}
+
+
+
+/* Заголовок */
+h1 {
+    color: #455442;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Групи полів */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Мітки */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #30352E;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Поля введення */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #889687;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Акцент при фокусі */
+input:focus {
+    outline: none;
+    border-color: #6F5E3C;
+    box-shadow: 0 0 5px rgba(111, 94, 60, 0.4);
+}
+
+/* Повідомлення про помилки */
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+/* Поле з помилкою */
+input.error {
+    border-color: #e74c3c;
+}
+
+/* Кнопка */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #455442;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+/* Наведення */
+button:hover {
+    background-color: #30352E;
+}
+
+/* Натискання */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Повідомлення про успіх */
+.success-message {
+    background-color: #889687;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(48, 53, 46, 0.2);
+}
+
+.success-message.show {
+    display: block;
+}
