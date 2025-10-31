@@ -1,5 +1,61 @@
-# Vue 3 + Vite
+# 🌐 Лабораторна робота: Vue 3 + Vite (SPA)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 🎯 Мета
+Розгорнути проєкт на **Vite + Vue 3 (Composition API)**.  
+Створити **односторінковий застосунок (SPA)** із маршрутизацією (**Vue Router**) і спільним **Layout**.  
+Організувати зрозумілу структуру компонентів і навігацію **без перезавантаження сторінки**.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## 📦 1. Ініціалізація проєкту
+
+### Вимоги
+- Встановлений **Node.js LTS**
+- Встановлений **Git**
+
+### Кроки створення проєкту
+
+Відкрийте термінал у зручній папці (наприклад, *Documents* або *Desktop*) і виконайте послідовно:
+```bash
+# 1. Створення проєкту через Vite
+npm create vite@latest my-spa -- --template vue
+
+# 2. Перехід у каталог проєкту
+cd my-spa
+
+# 3. Встановлення базових залежностей
+npm i
+
+# 4. Встановлення Vue Router для маршрутизації
+npm i vue-router
+```
+
+Після цього у вас буде створено порожній Vue 3-проєкт, готовий до розробки.
+
+---
+
+## ⚙️ 6. Запуск і збірка
+
+Після створення всіх компонентів і сторінок можна запустити застосунок.
+
+Відкрийте у браузері адресу, яку покаже консоль (зазвичай `http://localhost:5173`).
+
+### Для створення збірки (production):
+```bash
+npm run build
+```
+
+### Для перегляду зібраного проєкту:
+```bash
+npm run preview
+```
+
+---
+
+## 💡 Порада
+
+Якщо після `npm run dev` або `npm run preview` сторінки не відкриваються — перевірте:
+
+* правильність шляхів у `router/index.js`
+* щоб не було вкладеної папки `src/src`
+* чи підключено `app.use(router)` у `main.js`
